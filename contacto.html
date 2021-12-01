@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="font.css">
+	<link rel="stylesheet" href="estilos.css">
+	<title>Contáctame</title>
+	</head>
+<body>
+		<header>
+		<div class="titulo">
+			<h1>FrontB@ackDeveloper</h1>
+		</div>	
+		<nav>
+			<ul>
+			    <li><a href="index.html"><span class="icon-home3"></span> Inicio</a></li>
+			</ul>
+		</nav>
+	</header>
+		
+	<section class="contacto">
+		<div class="contenedor-formularios">
+			<h2 class="tituloformulario">CONTACTAME</h2><br>
+		<p class="parrafoformulario">Complete el siguiente formulario, y a la brevedad me comunicaré con ud. </p>
+		<hr><br>	
+        <form name="formularioContacto" action="mailto:gustavodbeltran@gmail.com" method="post">
+        	<input type="text" name="Nombre" placeholder="Nombre" class="nombre">
+        	<input type="text" name="Telefono" placeholder="Teléfono">
+        	<input type="text" name="Correo" placeholder="Correo electrónico">
+        	<textarea name="mensaje" placeholder="Escriba aquí su mensaje" cols="30" rows="10"></textarea>
+        	<input type="button" value="ENVIAR" id="boton" onclick="enviar()">
+
+        </form>
+		</div>
+		
+	</section>
+	
+	<footer>
+	<p class="piedepagina">FrontB@ack Developer | Mar del plata, Argentina | <span class="icon-mobile"></span> 0223 155-827063 |  
+			<a href="https://es-la.facebook.com/" target="_blank"><span class="icon-facebook2" id="face"></span></a>
+			<a href="https://www.instagram.com/?hl=es" target="_blank"><span class="icon-instagram" id="insta"></span></a>
+			<a href="https://www.youtube.com/channel/UCwcECx2qoOVOf4t4lJg9zwg" target="_blank"><span class="icon-youtube"  id="you"></span></a>
+	</p><br>
+	<p>
+	  Todos los derechos reservados &#169 2021 | e-mail: frontbackdeveloper@gmail.com 
+	</p><br>
+	</footer>
+	<script type="text/javascript" src="enviar.js"></script>
+</body>
+</html>
