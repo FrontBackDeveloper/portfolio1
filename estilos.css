@@ -48,7 +48,9 @@ header nav ul li a{
 	text-decoration: none;
 }
 header nav ul li a:hover{
-color: yellow;
+background: rgba(0, 0, 0, 0.2);
+color: #fff;
+transition: 0.4s;
 }
 .boton-header{
 	background-color: #31384A;
@@ -125,10 +127,7 @@ h2{
 .detalle{
 	color: #34495E;
 }
-.parrafo{
-	line-height: 30px;
-	color: #808080;
-}
+
 .tarjeta a{
 	text-decoration: none;
 	font-size: 16px;
@@ -206,6 +205,12 @@ h2{
 }
 
 /*estilos de seccion formularios */
+.contacto{
+	margin: auto;
+	max-width: 1400px;
+	background: linear-gradient(to right,#2874A6,#EAF2F8);
+}
+
 #contacto{
 	background-image: url(imagenes/contacto.jpg);
 	width: 100%;
@@ -257,13 +262,42 @@ textarea {
 	form{
 		width: 100%;
 	}
+	.link-repositorio{
+		display: none;
+	}
+	header .titulo h1{
+	font-size: 25px;
+	color: #ccc;
+	margin-left: 0px;
+  }
+  header .titulo h2{
+	font-size: 15px;
+	color: #fff;
+	margin-left: 0px;
+  }
+  header .titulo p{
+	font-size: 10px;
+	color: #ccc;
+	margin-left: 0;
+  }
+  .boton-header{
+	background-color: #31384A;
+	color: #fff;
+	padding: 5px 10px;
+	margin-left: 0px;
+	border-radius: 15px;
+  }
+  header nav ul li{
+	display: none;
+  }
+ 
 }
 
 /* estilos seccion proyectos */
 .tarjeta-proyectos{
 	width: 80%;
-	margin: 20px;
-	background: #fff;
+	m  argin: 20px;
+	round: #fff;
 	padding: 25px;
 	text-align: center;
 	border-radius: 8px;
@@ -283,6 +317,9 @@ textarea {
 .tarjeta-proyectos-info{
 	text-align: left;
 	margin-left: 20px;
+}
+.tarjeta-proyectos-info li{
+	list-style: none;
 }
 .icon-github:before {
   content: "\eab0";
