@@ -11,10 +11,10 @@
 	<header>
 		<nav>
 			<ul>
-				<li><a href="#contacto"> Contáctame</a></li>
-				 <li><a href="#contenedor-tarjeta"> Formación</a></li>
-				 <li><a href="#contenedor-tarjetas-proyectos"> Proyectos</a></li>
-			    <li><a href="#contenedor-informacion-personal"><span class="icon-home3"></span> Acerca de mí</a></li>
+				<li><a href="#contacto"> Contáctame</a></li><a href="#contenedor-informacion-personal"><span class="icon-home3"></span></a>
+				 <li><a href="#contenedor-tarjeta"> Formación</a></li><a href="#contenedor-tarjeta"><span class="icon-book"></span></a>
+				 <li><a href="#contenedor-tarjetas-proyectos"> Proyectos</a></li><a href="#contenedor-tarjetas-proyectos"><span class="icon-clipboard"></span></a>
+			    <li><a href="#contenedor-informacion-personal"> Acerca de mí</a></li><a href="#contacto"><span class="icon-envelop"></span></a>
 			</ul>
 			<div class="titulo">
 			<h1>Hola,</h1>
@@ -22,9 +22,7 @@
 			<p>Desarrollador Full Stack Web Junior</p><br>
 		</div>	
 		<div><a href="#contacto"><button class="boton-header">Contáctame</button></a></div><br>
-		</nav>
-
-		
+		</nav>	
 	</header>
 
 	<section id="contenedor-informacion-personal">
@@ -48,7 +46,7 @@
 		<div class="tarjeta">
 			<h2>FORMACION PROFESIONAL</h2><br>
 			<a href="https://www.tecnica3mdp.edu.ar/" target="_blank"><img src="imagenes/logo-escuela-tecnica.png" alt="imagen formacion profesional"></a>
-			<p>Mécnico Maestro Mayor de Obras, cursado en Escuela de Educacion Técnia N° 3 domingo Faustino Sarmiento.</p><br>
+			<p>Técnico Maestro Mayor de Obras, cursado en Escuela de Educacion Técnia N° 3 domingo Faustino Sarmiento.</p><br>
 			<p>	Mar del Plata, Argentina.-</p>
 					
 		</div>
@@ -123,11 +121,15 @@
 		<p class="parrafoformulario">Complete el siguiente formulario, y a la brevedad me comunicaré con ud. </p>
 		<hr><br>	
         <form name="formularioContacto" action="mailto:gustavodbeltran@gmail.com" method="post">
-        	<input type="text" name="Nombre" placeholder="Nombre">
-        	<input type="text" name="Telefono" placeholder="Teléfono">
-        	<input type="text" name="Correo" placeholder="Correo electrónico">
-        	<textarea name="mensaje" placeholder="Escriba aquí su mensaje" cols="30" rows="10"></textarea>
-        	<input type="button" value="ENVIAR" id="boton">
+        	<label for="nombre"></label>
+        	<input type="text" name="Nombre" id="nombre" placeholder="Nombre">
+        	<label for="telefono"></label>
+        	<input type="text" name="Telefono" id="telefono" placeholder="Teléfono">
+        	<label for="email"></label>
+        	<input type="text" name="Correo" id="email" placeholder="Correo electrónico">
+        	<label for="mensaje"></label>
+        	<textarea name="mensaje" id="mensaje" placeholder="Escriba aquí su mensaje" cols="30" rows="10"></textarea>
+        	<input type="submit" value="ENVIAR" id="boton">
         </form>
 		</div>
 

@@ -53,16 +53,14 @@ color: #fff;
 transition: 0.4s;
 }
 .boton-header{
-	background-color: #31384A;
+	background-color: #F1C40F ;
 	color: #fff;
 	padding: 5px 35px;
 	margin-left: 280px;
 	border-radius: 15px;
 }
-.boton-header:hover {
-	background: #A9CCE3;
-	cursor: pointer;
-}
+
+
 /* estilos del footer */
 
 footer{
@@ -258,6 +256,9 @@ textarea {
 	background: #34495E;
 	cursor: pointer;
 }
+span {
+	display: none;
+}
 @media (max-width: 480px){
 	form{
 		width: 100%;
@@ -287,16 +288,21 @@ textarea {
 	margin-left: 0px;
 	border-radius: 15px;
   }
-  header nav ul li{
-	display: none;
+  header nav ul li a{
+  	display: none;
   }
- 
+  span {
+	display: inline-block;
+	color: #31384A;
+	margin-left: 40px;
+}
 }
 
 /* estilos seccion proyectos */
 .tarjeta-proyectos{
+	background: #fff;
 	width: 80%;
-	m  argin: 20px;
+	margin: 20px;
 	round: #fff;
 	padding: 25px;
 	text-align: center;
