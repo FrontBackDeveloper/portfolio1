@@ -2,40 +2,42 @@
 *{
 	margin: 0;
 	padding: 0;
-	font-family: verdana;
 	box-sizing: border-box;
+	font-family: sans-serif;
 }
 /* estilos del header */
-header {
+
+.titulo {
+	margin: 0 auto;
 	padding:40px;
 	background-image: url(imagenes/fondo-header.jpg);
 	background-size: 100vw 100hw;
-	background-attachment: fixed;
+	max-width: 1200px;
 	background-position: center;
 }
 
 header .titulo h1{
 	font-size: 45px;
 	color: #ccc;
-	margin-left: 150px;
+	margin-left: 100px;
 }
 header .titulo h2{
 	font-size: 35px;
 	color: #fff;
-	margin-left: 150px;
+	margin-left: 100px;
 }
 header .titulo p{
 	font-size: 20px;
 	color: #ccc;
-	margin-left: 150px;
-	margin-left: 170px;
+	margin-left: 100px;
 }
 header, footer{
 width: 100%;
-margin: auto;
-max-width: 1400px;
+margin: 0 auto;
+max-width: 1200px;
 }
 header nav{
+	background: #000;
 	overflow: hidden;
 }
 header nav ul{
@@ -45,9 +47,9 @@ header nav ul li{
 	float: right;
 }
 header nav ul li a{
-	padding: 10px 20px;
+	padding: 20px 20px;
 	display: block;
-	color: #000;
+	color: #fff;
 	text-decoration: none;
 }
 header nav ul li a:hover{
@@ -99,12 +101,12 @@ footer a:active{
 /* estilos de tarjetas */
 
 #contenedor-tarjeta, #contenedor-tarjetas-proyectos, #contacto{
-	background: linear-gradient(to right,#2874A6,#EAF2F8);
+	background: #000;
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
 	margin: auto;
-	max-width: 1400px;
+	max-width: 1200px;
 }
 #contenedor-tarjetas-proyectos h3{
 	text-align: center;
@@ -154,11 +156,16 @@ h2{
 
 #contenedor-informacion-personal{
 	margin: auto;
-	max-width: 1400px;
+	max-width: 1200px;
 }
 .info img{
 	width: 100%;
-	
+	margin-bottom: 20px;
+}
+.info .link{
+	color: #fff;
+	font-size: 15px;
+	padding: 12px;
 }
 
 #info{
@@ -213,8 +220,8 @@ h2{
 /*estilos de seccion formularios */
 .contacto{
 	margin: auto;
-	max-width: 1400px;
-	background: linear-gradient(to right,#2874A6,#EAF2F8);
+	max-width: 1200px;
+	background: #000;
 }
 
 #contacto{
@@ -264,7 +271,7 @@ textarea {
 	background: #34495E;
 	cursor: pointer;
 }
-span .menu{
+.iconos{
 	display: none;
 }
 @media (max-width: 480px){
@@ -296,14 +303,19 @@ span .menu{
 	margin-left: 0px;
 	border-radius: 15px;
   }
-  header nav ul li a{
-  	display: none;
-  }
-  span .menu{
+  .iconos{
 	display: inline-block;
 	color: #fff;
-	font-size: 30px;
-	margin-left: 30px;
+	font-size: 20px;
+	margin-left: 20px;
+  }
+  .menu ul li a{
+  	display: none;
+  }
+  .tarjeta-proyectos img{
+	width: 100%;
+	float: left;
+	margin: 10px;
 }
 }
 
@@ -321,7 +333,7 @@ span .menu{
 	transition: 0.4s;
 }
 .tarjeta-proyectos img{
-	width: 25%;
+	width: 60%;
 	float: left;
 	margin: 10px;
 }
@@ -341,4 +353,37 @@ span .menu{
 }
 h3{
 	padding: 20px;
+}
+
+/* seccion mas a cerca de mi */
+.contenedor-masdemi{
+  margin: 0 auto;
+	padding:20px;
+	text-align: justify;
+	background-image: url(imagenes/fondo-masdemi-3.jpg);
+	background-size: 100vw 100vh;
+	background-attachment: fixed;
+	background-position: center;
+	max-width: 1200px;
+}
+
+.contenedor-masdemi h3{
+	color: red;
+	text-shadow: 1px  0px 0px black,
+               0px  1px 0px black,
+              -1px  0px 0px black,
+               0px -1px 0px black;
+	text-align: center;
+	font-size: 25px;
+}
+.tarjeta-masdemi-info{
+	font-family:verdana;
+  font-size:20px;
+  color:yellow;
+  text-shadow: 1px  0px 0px black,
+               0px  1px 0px black,
+              -1px  0px 0px black,
+               0px -1px 0px black;
+	margin: 40px auto;
+
 }
